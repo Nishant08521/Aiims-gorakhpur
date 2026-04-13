@@ -36,6 +36,7 @@ function HomePage() {
       <HeroSection />
       <LeadershipSection />
       <QuickServices />
+      <KpiSection />
       <AboutSection />
       <DepartmentsSection />
       <DoctorsSection />
