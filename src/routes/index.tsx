@@ -32,6 +32,7 @@ function HomePage() {
       <TopUtilityBar />
       <SiteHeader />
       <HeroSection />
+      <LeadershipSection />
       <QuickServices />
       <AboutSection />
       <DepartmentsSection />
