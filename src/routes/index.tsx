@@ -41,6 +41,7 @@ function HomePage() {
       <NoticesSection />
       <FacilitiesSection />
       <AcademicsSection />
+      <LatestEventsSection />
       <InfrastructureSection />
       <ContactSection />
       <SiteFooter />
