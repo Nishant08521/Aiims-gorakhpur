@@ -109,7 +109,7 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
         <span className={`text-4xl font-extrabold bg-gradient-to-r ${kpi.gradient} bg-clip-text text-transparent`}>
           {formatNumber(count)}
         </span>
-        {kpi.suffix && <span className="text-white/40 text-sm">{kpi.suffix}</span>}
+        {kpi.suffix && <span className="text-muted-foreground text-sm">{kpi.suffix}</span>}
       </div>
 
       {/* Subtle glow effect */}
