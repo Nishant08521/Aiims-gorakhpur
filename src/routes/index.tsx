@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import LeadershipSection from "@/components/LeadershipSection";
 import QuickServices from "@/components/QuickServices";
 import KpiSection from "@/components/KpiSection";
+import OpdStatusSection from "@/components/OpdStatusSection";
 import AboutSection from "@/components/AboutSection";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import DoctorsSection from "@/components/DoctorsSection";
@@ -37,6 +38,7 @@ function HomePage() {
       <LeadershipSection />
       <QuickServices />
       <KpiSection />
+      <OpdStatusSection />
       <AboutSection />
       <DepartmentsSection />
       <DoctorsSection />
