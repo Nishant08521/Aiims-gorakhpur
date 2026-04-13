@@ -27,13 +27,13 @@ export default function OpdStatusSection() {
 
   return (
     <section className="bg-secondary/30 py-14">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto px-6">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-lg">
           <h2 className="mb-8 text-center text-2xl font-bold text-primary sm:text-3xl">
             OPD Status – {MONTH} {YEAR}
           </h2>
 
-          <div className="grid grid-cols-7 gap-2 sm:gap-3">
+          <div className="grid grid-cols-7 gap-2 sm:gap-3 lg:grid-cols-10">
             {days.map((day) => {
               const closed = isClosed(day);
               const dayName = getDayName(day);
