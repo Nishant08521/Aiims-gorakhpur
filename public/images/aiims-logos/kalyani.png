@@ -1,71 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<meta charset="utf-8">
+<title>Wikimedia Error</title>
+<style>
+* { margin: 0; padding: 0; }
+body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
+.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; display: flex; flex-direction: row; flex-wrap: wrap; }
+.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
+img { margin: 0 2em 2em 0; }
+a img { border: 0; }
+h1 { margin-top: 1em; font-size: 1.2em; }
+.content-text { flex: 1; }
+p { margin: 0.7em 0 1em 0; }
+a { color: #0645ad; text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: sans-serif; }
+summary { font-weight: bold; cursor: pointer; }
+details[open] { background: #970302; color: #dfdedd; }
+.text-muted { color: #777; }
+@media (prefers-color-scheme: dark) {
+  a { color: #9e9eff; }
+  body { background: transparent; color: #ddd; }
+  .footer { border-top: 1px solid #444; background: #060606; }
+  #logo { filter: invert(1) hue-rotate(180deg); }
+  .text-muted { color: #888; }
+}
+</style>
+<meta name="color-scheme" content="light dark">
+<div class="content" role="main">
+<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
+</a>
+<div class="content-text">
+<h1>Error</h1>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AIIMS Kalyani - All India Institute of Medical Sciences" />
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tiny.cloud https://*.tiny.cloud; style-src 'self' 'unsafe-inline' https://cdn.tiny.cloud https://*.tiny.cloud https://cdnjs.cloudflare.com; img-src 'self' data: blob: http: https://cdn.tiny.cloud https://*.tiny.cloud https:; connect-src 'self' http: https: ws: wss: https://cdn.tiny.cloud https://*.tiny.cloud; font-src 'self' data: https://cdn.tiny.cloud https://*.tiny.cloud https://cdnjs.cloudflare.com https://fonts.gstatic.com; media-src 'self' data: blob: http: https:; frame-src 'self' http:; object-src 'self' http:; base-uri 'self'; form-action 'self';" />
-  <title>AIIMS Kalyani</title>
-
-  <!-- Manual translations only - NO Google Translate -->
-  <!-- All translations come from: -->
-  <!-- 1. Database content (title_bn, title_hi fields) -->
-  <!-- 2. Manual translation dictionary (frontend/src/utils/translations.ts) -->
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Suppress browser extension errors ASAP -->
-  <script>
-    (function () {
-      // Suppress unhandled promise rejections from browser extensions
-      window.addEventListener('unhandledrejection', function (event) {
-        var error = event.reason;
-        if (error) {
-          try {
-            var errorStr = JSON.stringify(error);
-            // Check for extension error patterns
-            if (
-              (error.name === 'i') ||
-              (error.code === 403 && error.httpStatus === 200) ||
-              (errorStr.indexOf('"name":"i"') !== -1) ||
-              (errorStr.indexOf('"code":403') !== -1 && errorStr.indexOf('"httpStatus":200') !== -1) ||
-              (errorStr.indexOf('httpError') !== -1)
-            ) {
-              event.stopImmediatePropagation();
-              event.preventDefault();
-              return false;
-            }
-          } catch (e) { }
-        }
-      }, true);
-
-      // Suppress error events from extensions
-      window.addEventListener('error', function (event) {
-        if (event.filename && (
-          event.filename.indexOf('content.js') !== -1 ||
-          event.filename.indexOf('chrome-extension') !== -1 ||
-          event.filename.indexOf('moz-extension') !== -1 ||
-          event.filename.indexOf('extension') !== -1
-        )) {
-          event.stopImmediatePropagation();
-          event.preventDefault();
-          return false;
-        }
-      }, true);
-    })();
-  </script>
-  <script type="module" crossorigin src="/assets/index-DBU_xhcJ.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-D5FpnryU.css">
-</head>
-
-<body>
-  <div id="root"></div>
-</body>
-
+<p>Too many requests (f061ab2)</p>
+</div>
+</div>
+<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request served via cp3077 cp3077, Varnish XID 186858888<br>Upstream caches: cp3077 int<br>Error: 429, Too many requests (f061ab2) at Mon, 13 Apr 2026 12:11:09 GMT<br><details><summary>Sensitive client information</summary>IP address: 2a07:8241:fff:1101:0:120:0:1ad2</details></code></p>
+</div>
 </html>
