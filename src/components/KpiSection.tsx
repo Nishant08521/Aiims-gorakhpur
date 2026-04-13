@@ -1,29 +1,144 @@
 import { Users, Building2, BedDouble, FlaskConical } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 
 const KPIS = [
-  { icon: Users, label: "Total OPD Footfall", period: "in March 2026", total: "95,532" },
-  { icon: Building2, label: "Total Trauma & Emergency", period: "in March 2026", total: "6,400" },
-  { icon: BedDouble, label: "Total IPD Admission", period: "in March 2026", total: "3,178" },
-  { icon: FlaskConical, label: "Total Laboratory Test", period: "in March 2026", total: "1,23,823" },
+  {
+    icon: Users,
+    label: "Total OPD Footfall",
+    period: "March 2026",
+    total: 95532,
+    suffix: "",
+    gradient: "from-blue-500 to-cyan-400",
+    iconBg: "bg-blue-500/10",
+    iconColor: "text-blue-400",
+  },
+  {
+    icon: Building2,
+    label: "Trauma & Emergency",
+    period: "March 2026",
+    total: 6400,
+    suffix: "",
+    gradient: "from-rose-500 to-orange-400",
+    iconBg: "bg-rose-500/10",
+    iconColor: "text-rose-400",
+  },
+  {
+    icon: BedDouble,
+    label: "Total IPD Admission",
+    period: "March 2026",
+    total: 3178,
+    suffix: "",
+    gradient: "from-emerald-500 to-teal-400",
+    iconBg: "bg-emerald-500/10",
+    iconColor: "text-emerald-400",
+  },
+  {
+    icon: FlaskConical,
+    label: "Laboratory Tests",
+    period: "March 2026",
+    total: 123823,
+    suffix: "",
+    gradient: "from-violet-500 to-purple-400",
+    iconBg: "bg-violet-500/10",
+    iconColor: "text-violet-400",
+  },
 ];
+
+function formatNumber(n: number): string {
+  return n.toLocaleString("en-IN", { useGrouping: true });
+}
+
+function useCountUp(target: number, duration = 2000, trigger = false) {
+  const [value, setValue] = useState(0);
+  const rafRef = useRef<number>(0);
+
+  useEffect(() => {
+    if (!trigger) return;
+    const start = performance.now();
+    const animate = (now: number) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setValue(Math.round(eased * target));
+      if (progress < 1) rafRef.current = requestAnimationFrame(animate);
+    };
+    rafRef.current = requestAnimationFrame(animate);
+    return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); };
+  }, [target, duration, trigger]);
+
+  return value;
+}
+
+function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const count = useCountUp(kpi.total, 2000, visible);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setVisible(true); obs.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  const Icon = kpi.icon;
+
+  return (
+    <div
+      ref={ref}
+      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 transition-all duration-500 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] hover:shadow-2xl"
+      style={{ animationDelay: `${index * 150}ms` }}
+    >
+      {/* Gradient accent line */}
+      <div className={`absolute top-0 left-0 h-1 w-full bg-gradient-to-r ${kpi.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
+
+      <div className="flex items-start gap-4">
+        <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl ${kpi.iconBg} transition-transform duration-300 group-hover:scale-110`}>
+          <Icon size={26} strokeWidth={1.5} className={kpi.iconColor} />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-sm font-medium text-white/60 uppercase tracking-wider">{kpi.period}</p>
+          <p className="mt-1 text-lg font-semibold text-white/90 leading-tight">{kpi.label}</p>
+        </div>
+      </div>
+
+      <div className="mt-5 flex items-baseline gap-1">
+        <span className={`text-4xl font-extrabold bg-gradient-to-r ${kpi.gradient} bg-clip-text text-transparent`}>
+          {formatNumber(count)}
+        </span>
+        {kpi.suffix && <span className="text-white/40 text-sm">{kpi.suffix}</span>}
+      </div>
+
+      {/* Subtle glow effect */}
+      <div className={`absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-gradient-to-r ${kpi.gradient} opacity-5 blur-2xl group-hover:opacity-10 transition-opacity duration-500`} />
+    </div>
+  );
+}
 
 export default function KpiSection() {
   return (
-    <section className="bg-primary py-12">
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 sm:grid-cols-2">
-        {KPIS.map((kpi) => (
-          <div
-            key={kpi.label}
-            className="flex flex-col items-center rounded-2xl border-2 border-amber-600/30 bg-amber-500 px-8 py-10 text-center"
-          >
-            <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-foreground/70 bg-card">
-              <kpi.icon size={28} strokeWidth={1.5} className="text-foreground" />
-            </div>
-            <p className="text-base font-bold text-foreground">{kpi.label}</p>
-            <p className="text-sm text-foreground/70">{kpi.period}</p>
-            <p className="mt-2 text-xl font-extrabold text-foreground">Total :- {kpi.total}</p>
-          </div>
-        ))}
+    <section className="relative bg-[hsl(var(--primary))] py-16 overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
+          backgroundSize: "40px 40px",
+        }} />
+      </div>
+
+      <div className="relative mx-auto max-w-6xl px-6">
+        <div className="mb-10 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">Performance Metrics</p>
+          <h2 className="mt-2 text-3xl font-bold text-white">Hospital at a Glance</h2>
+        </div>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {KPIS.map((kpi, i) => (
+            <KpiCard key={kpi.label} kpi={kpi} index={i} />
+          ))}
+        </div>
       </div>
     </section>
   );
