@@ -1,0 +1,1369 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="All India Institute of Medical Sciences, Jodhpur">
+    <meta name="generator" content="AIIMS Jodhpur">
+    <title>AIIMS Jodhpur</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/aiims/favicon.ico">
+   
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      } 
+    </style>
+
+    <!-- Style banner start -->
+    <style>
+        .banner {
+            position: relative;
+            width: 50%;
+            height: auto;
+            max-height: 300px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+        }
+    </style>
+    <!-- Style banner end -->
+    
+
+    <!-- Style for dropdown navbar start -->
+    
+
+    <!-- Style for dropdown navbar end -->
+
+    <!-- Script for dropdown navbar start -->
+    
+    <!-- Script for dropdown navbar end -->
+
+    <script>
+        const marquee = document.querySelector('.marquee-content');
+
+        // Stop marquee animation
+        function stopMarquee() {
+            marquee.style.animationPlayState = 'paused';
+        }
+
+        // Start marquee animation
+        function startMarquee() {
+            marquee.style.animationPlayState = 'running';
+        }
+    </script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+
+<nav class="py-2 bg-custom border-bottom">
+  <div class="container-fluid d-flex flex-wrap">
+    <ul class="nav me-auto text-dark">
+      <p style="text-align: left; padding-right: 10px;">
+        Enquiry :- 0291-2740742 (OPD), Emergency : 0291-2831622 <br />Medical College/Admin Building : 0291-2740741
+      </p>      
+    </ul>
+    <ul class="nav me-auto">
+      <li class="nav-item"><a href="https://eoffice.aiimsjodhpur.edu.in/" class="nav-link link-dark px-2" target="_blank">eOffice</a></li>
+      <li class="nav-item"><a href="http://aiimsjodhpur.prd.dcservices.in/" class="nav-link link-dark px-2" target="_blank">CDAC (HMIS)</a></li>
+      <li class="nav-item"><a href="http://10.200.4.11/aiims/" class="nav-link link-dark px-2" target="_blank">Intranet</a></li>
+      <li class="nav-item"><a href="https://aiimsj-opac.kohacloud.in/" class="nav-link link-dark px-2" target="_blank">Central Library</a></li>
+      <li class="nav-item"><a href="https://payroll.aiimsjodhpur.edu.in/" class="nav-link link-dark px-2" target="_blank">Payroll</a></li>
+    </ul>
+    <ul class="nav">
+          </ul>
+  </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: #fff; background-color: #222; padding: 8px;">
+      <span style="display: block; width: 28px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px;"></span>
+      <span style="display: block; width: 28px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px;"></span>
+      <span style="display: block; width: 28px; height: 3px; background: #fff; margin: 5px 0; border-radius: 2px;"></span>
+    </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Administration
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="cib-president.php">President - CIB</a></li>
+            <li><a class="dropdown-item" href="institute-president.php">President - Institute</a></li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Executive Director
+              </a>
+              <ul class="dropdown-menu">
+              <li><a href="executive-director.php" class="dropdown-item">Current</a></li>
+              <li><a href="former-director.php" class="dropdown-item">Former</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="institute-bodies.php">Bodies & Committees</a></li>
+            <li><a class="dropdown-item" href="alldocs/miscdocs/Institute-hierarchy.pdf" target="_blank">Administrative Office</a></li>
+            <li><a class="dropdown-item" href="alldocs/miscdocs/IB Reconstitution Notification.pdf" target="_blank">Gazette Notification</a></li>
+            <li><a class="dropdown-item" href="liaison_officer_obc.php">Liaison Officer for OBCs</a></li>            
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Roster
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="alldocs/roster/Faculty.pdf" class="dropdown-item" target="_blank">Faculty Roster</a></li>
+                <li><a href="alldocs/roster/Group A.pdf" class="dropdown-item" target="_blank">Non-Faculty Group A Roster</a></li>
+                <li><a href="alldocs/roster/Group B updated.pdf" class="dropdown-item" target="_blank">Non-Faculty Group B Roster</a></li>
+                <li><a href="alldocs/roster/Group C.pdf" class="dropdown-item" target="_blank">Non-Faculty Group C Roster</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Acts
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="alldocs/miscdocs/aiimsact.pdf" class="dropdown-item" target="_blank">AIIMS Act</a></li>
+                <li><a href="alldocs/miscdocs/AIIMS_Amendement_Act_2012.pdf" class="dropdown-item" target="_blank">AIIMS Amendment Act, 2012</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                RTI
+              </a>
+              <ul class="dropdown-menu">                
+                <li><a href="alldocs/miscdocs/rti-act.pdf" class="dropdown-item" target="_blank">RTI Act</a></li>
+                <li><a href="cpio.php" class="dropdown-item">RTI Officials</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="departments.php">Departments</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Academics
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="phd-course.php">PhD Course</a></li>
+            <li><a class="dropdown-item" href="sph.php">School of Public Health</a></li>
+            <li><a class="dropdown-item" href="pg-course.php">PG Courses</a></li>
+            <li><a class="dropdown-item" href="dm-mch.php">DM / M.Ch. Program</a></li>
+            <li><a class="dropdown-item" href="pbd.php">Post Basic Diploma Program</a></li>
+            <li><a class="dropdown-item" href="iit-aiims.php">IIT - AIIMS Joint Programs</a></li>
+            <li><a class="dropdown-item" href="ahscourse.php">Allied Health Sciences Courses</a></li>            
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Student Section
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="alldocs/studentdocs/Anti-ragging Measures-27724.pdf" class="dropdown-item" target="_blank">Anti Ragging</a></li>
+                <li><a href="alldocs/studentdocs/Letter No 316 dated 19th August 2025 regarding Anti Ragging Committee.pdf" class="dropdown-item" target="_blank">Anti Ragging Committee</a></li>
+                <li><a href="alldocs/studentdocs/Letter No 317 dated 19th August 2025 regarding Anti Ragging Squad 2025.pdf" class="dropdown-item" target="_blank">Anti Ragging Squad</a></li>
+                <li><a href="studentlist.php" class="dropdown-item">Student List</a></li>
+                <li><a href="alldocs/studentdocs/STUDENT ADMISSION BOOKLET 2025 A4.pdf" class="dropdown-item" target="_blank">Student Admission Booklet</a></li>
+                <li><a href="alldocs/studentdocs/STUDENT INFORMATION BOOKLET MBBS 2022 (1).pdf" class="dropdown-item" target="_blank">Student Information Booklet</a></li>
+                <li><a href="alldocs/studentdocs/Well-being Essentials-26222.pdf" class="dropdown-item" target="_blank">Wellbeing essentials for College Students</a></li>
+                <li><a href="alldocs/studentdocs/Wellbeing initiatives at AIIMS Jodhpur.pdf" class="dropdown-item" target="_blank">Wellbeing Initiatives at AIIMS Jodhpur</a></li>
+                <li><a href="telemanas.php" class="dropdown-item">Tele MANAS</a></li>
+                <li><a href="alldocs/studentdocs/Contact details in case of stress or psychological issues-090625.pdf" class="dropdown-item" target="_blank">Contact in case of Stress</a></li>
+                <li><a href="convocation.php" class="dropdown-item">Convocation</a></li>
+                <li><a href="https://forms.eduqfix.com/aiiomsj/add" class="dropdown-item" target="_blank">Mess fee link</a></li>
+                <li><a href="https://forms.gle/6phrtgjPUEhasMsS7" class="dropdown-item" target="_blank">Complaint Submission Form</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="alldocs/studentdocs/SIRI Guidelines & Intent form-17524.pdf" target="_blank">Student Innovation & Research Initiative - Guideline & Form</a></li>
+            <li><a class="dropdown-item" href="alldocs/studentdocs/New form of AIIMS observership.pdf" target="_blank">Observership Form</a></li>
+            <li><a class="dropdown-item" href="alldocs/studentdocs/Courses List-131023.pdf" target="_blank">Courses List</a></li>
+            <li><a class="dropdown-item" href="curriculum.php">Curriculum</a></li>
+
+            
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="research.php">Research</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="nirf.php">NIRF</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="conference.php">Conference</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recruitment
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Faculty Recruitment
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="fac-d-rec.php" class="dropdown-item">Direct Basis</a></li>
+                <li><a href="fac-c-rec.php" class="dropdown-item">Contract Basis</a></li>
+                <li><a href="fac-dep-rec.php" class="dropdown-item">Deputation Basis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Residents (SR / JR)
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="residents-rec.php" class="dropdown-item">Online</a></li>
+                <li><a href="residents-rec-walkin.php" class="dropdown-item">Walk-in</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="fellowship-rec.php">Fellowship</a></li>
+            <li><a class="dropdown-item" href="non-fac-rec.php">Non-Faculty</a></li>
+            <li><a class="dropdown-item" href="research-rec.php">Research</a></li>
+            <li><a class="dropdown-item" href="deputation-rec.php">Deputation</a></li>
+            <li><a class="dropdown-item" href="other-aiims-rec.php">Other AIIMS</a></li>
+            <li><a class="dropdown-item" href="alldocs/recdocs/Recruitment Rules for Non - Faculty Posts.pdf" target="_blank">Recruitment Rules</a></li>
+            <li><a class="dropdown-item" href="alldocs/recdocs/asasdasdasda-merged-301225.pdf" target="_blank">Amendment Recruitment Rules</a></li>
+            <li><a class="dropdown-item" href="https://pmssy.mohfw.gov.in/files/Posts_creation_and_ad_hoc_Committees_jodhpur.pdf" target="_blank">Ad Hoc Committees - I</a></li>
+            <li><a class="dropdown-item" href="https://pmssy.mohfw.gov.in/files/procurement/Creation_of_posts_and_Ad_hoc_Committees_Jodhpur.pdf" target="_blank">Ad Hoc Committees - II</a></li>
+            <li><a class="dropdown-item" href="https://pmssy.mohfw.gov.in/files/circular/creation%20of%20post_1005.pdf" target="_blank">Resident Posts</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            News & Events
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="news.php">News</a></li>
+            <li><a class="dropdown-item" href="events.php">Events</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Procurement
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="tenders.php">Tenders</a></li>
+            <li><a class="dropdown-item" href="quotations.php">Quotations</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="notices.php">Notices</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Patient Services
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://aiimsjodhpur.prd.dcservices.in/" target="_blank">CDAC HMIS</a></li>
+            <li><a class="dropdown-item" href="https://aiimsjodhpur.prd.dcservices.in/Patient_Portal/transactions/PatientLogin.html" target="_blank">Patient Login</a></li>
+            <li><a class="dropdown-item" href="https://aiimsjodhpur.prd.dcservices.in/HISUtilities/dashboard/dashBoardACTION.cnt?groupId=MTY1&dashboardFor=SE1JUw==&hospitalCode=998&seatId=10001&isGlobal=1&isPreview=1" target="_blank">Patient Dashboard</a></li>
+            <li><a class="dropdown-item" href="opd_roster/OPDSchedule" target="_blank">OPD Roster</a></li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ABHA
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="https://aiimsjodhpur.prd.dcservices.in/ndhmConnect/emr/qmsShareProfile.action" class="dropdown-item" target="_blank">ABHA ID</a></li>
+                <li><a href="https://healthid.ndhm.gov.in/register" class="dropdown-item" target="_blank">ABHA Registration</a></li>
+                <li><a href="https://www.youtube.com/watch?v=t-X3NQPuTX8" class="dropdown-item" target="_blank">ABHA Video</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="alldocs/hospdocs/Online Information YFVC.pdf" target="_blank">Yellow Fever Vaccination Centre</a></li>
+            <li class="nav-item dropend">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blood Bank
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item" style="color:#FF671F;">Contact No. 0291-2831436</a></li>
+                <li><a href="alldocs/hospdocs/Blood Order Form-13824.pdf" class="dropdown-item" target="_blank">Blood Order Form</a></li>
+                <li><a href="alldocs/hospdocs/Blood Component Release Request Form.pdf" class="dropdown-item" target="_blank">Blood Component Release Request Form</a></li>
+                <li><a href="alldocs/hospdocs/Consent Form-13824.pdf" class="dropdown-item" target="_blank">Consent Form</a></li>
+                <li><a href="alldocs/hospdocs/Final Suspected Transfusion Reaction Form.pdf" class="dropdown-item" target="_blank">Transfusion Reaction Reporting Form</a></li>
+                <li><a href="alldocs/hospdocs/Request for Empty Blood Bags for ANVH-7924.pdf" class="dropdown-item" target="_blank">ANVH Request Form</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+      
+      
+    </div>
+  </div>
+</nav>
+</header>
+
+<div class="container banner">
+  <img src="assets/images/aiims/aiimsjlogontext.png" alt="Banner Image" class="img-fluid">
+</div>
+
+
+<!-- Output -->
+<div class="alert text-white bg-dark" role="alert">
+    <h6 style="text-align: center;">
+        Patients Registered Today in OPD:
+        <span style="color: #FF671F;">7274</span> |
+        Emergency:
+        <span style="color: #FF671F;">143</span>
+    </h6>
+</div>
+
+<div class="alert text-white bg-dark" role="alert">
+    <h6 style="text-align: center;">
+        
+    <marquee onmouseout="startMarquee()" onmouseover="stopMarquee()" direction="left" scrolldelay="100">
+        <strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/" target="_blank" style="text-decoration: none; color:#FF671F;">5th Convocation of All India Institute of Medical Sciences, Jodhpur will be held on 6th May 2026</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#FF671F;">Admn/Rect./Contract/2026/02 RECRUITMENT FOR VARIOUS POSTS IN AIIMS JODHPUR ON CONTRACT BASIS</a></strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#FF671F;">Document Verification - Notice No.355/2025 COMMON RECRUITMENT EXAMINATION- 4 (CRE-4) For AIIMS and Other Central Govt Institutes/bodies</a></strong>    </marquee>
+
+    <script>
+        function stopMarquee() {
+            document.querySelector('marquee').stop();
+        }
+        
+        function startMarquee() {
+            document.querySelector('marquee').start();
+        }
+    </script>
+        
+    </h6>
+</div>
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/aiims/banner4.jpeg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+
+      <div class="carousel-item">
+        <img src="assets/images/aiims/126A6139-1.jpg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+      
+      <div class="carousel-item">
+        <img src="assets/images/aiims/111025-1.jpg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+      
+      <div class="carousel-item">
+        <img src="assets/images/aiims/banner-3events24.jpg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+
+      <div class="carousel-item">
+        <img src="assets/images/aiims/RD-2026.jpg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+      
+      <div class="carousel-item">
+        <img src="assets/images/aiims/126A8486.JPG" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div>
+
+      <!-- </div>
+      <div class="carousel-item">
+        <img src="assets/images/aiims/banner-5event25.jpg" class="w-100">
+        <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        
+      </div> -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- Cards Placeholder start -->
+
+<div class="container card-group text-dark">
+    <div class="card text-center" style="border: none; background-color: transparent;">
+      <img src="assets/images/aiims/Union-Minister-MohFW-jpnadda.png" class="img-fluid mx-auto d-block" alt="Union-Minister-MohFW" style="width: 50%; box-shadow: none; border-radius: 0;">
+      <div class="card-body">
+        <h5 class="card-title">Sh. Jagat Prakash Nadda</h5>
+        <p class="card-text">Hon'ble Union Minister of Health and Family Welfare</p>
+      </div>
+    </div>
+    <div class="card text-center" style="border: none; background-color: transparent;">
+      <img src="assets/images/aiims/minister-of-state-MohFW-jadhav.png" class="img-fluid mx-auto d-block" alt="minister-of-state-MohFW" style="width: 50%; box-shadow: none; border-radius: 0;">
+      <div class="card-body">
+        <h5 class="card-title">Sh. Jadhav Prataprao Ganpatrao</h5>
+        <p class="card-text">Hon'ble Minister of State</p>
+      </div>
+    </div>
+    <div class="card text-center" style="border: none; background-color: transparent;">
+      <img src="assets/images/aiims/minister-of-state-2-MohFW-Anupriya-Patel.png" class="img-fluid mx-auto d-block" alt="minister-of-state-MohFW" style="width: 50%; box-shadow: none; border-radius: 0;">
+      <div class="card-body">
+        <h5 class="card-title">Smt. Anupriya Patel</h5>
+        <p class="card-text">Hon'ble Minister of State</p>
+      </div>
+    </div>
+</div>
+
+<div class="container card-group text-dark">
+    <div class="card text-center" style="border: none; background-color: transparent;">
+      <img src="assets/images/aiims/tejas_madhusudan_patel_president.png" class="img-fluid mx-auto d-block" alt="Union-Minister-MohFW" style="width: 30%; box-shadow: none; border-radius: 0;">
+      <div class="card-body">
+        <h5 class="card-title">Prof. (Dr.) Tejas Madhusudan Patel</h5>
+        <p class="card-text">President - Institute</p>
+      </div>
+    </div>
+    <div class="card text-center" style="border: none; background-color: transparent;">
+      <img src="assets/images/aiims/Dr._Goverdhan_Dutt_Puri.png" class="img-fluid mx-auto d-block" alt="minister-of-state-MohFW" style="width: 30%; box-shadow: none; border-radius: 0;">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Goverdhan Dutt Puri</h5>
+        <p class="card-text">Executive Director</p>
+      </div>
+    </div>
+</div>
+
+<!-- Cards Placeholder end -->
+
+<div class="container-fluid text-dark">
+
+    <!-- Three columns of text below the carousel -->
+
+    <div class="p-5 mb-4 bg-custom rounded-3">
+      <div class="container-fluid py-5" style="text-align: justify;">
+        <h1 class="display-5 fw-bold">Welcome to AIIMS Jodhpur</h1>
+        <p class="col-md-12 fs-4">AIIMS Jodhpur is one of the SIX NEW AIIMS established by the Ministry of Health & Family Welfare, Government of India under the Pradhan Mantri Swasthya Suraksha Yojna (PMSSY) with the aim of correcting regional imbalances in quality tertiary level healthcare in the country and attaining self sufficiency in graduate and postgraduate medical education. PMSSY planned to set up 6 new AIIMS like institutions in under served areas of the country.</p>
+        <p class="col-md-12 fs-4">These institutions are being established by an Act of Parliament on the lines of the original All India Institute of Medical Sciences in New Delhi which imparts both undergraduate and postgraduate medical education in all its branches and related fields, along with nursing and paramedical training to bring together in one place educational facilities of the highest order for the training of personnel in all branches of health care activity.</p>
+        <h3 class="fw-bold">Jan Aushadhi Kendra</h3>
+        <p class="col-md-12 fs-4">Our Jan Aushadhi Kendra has been proudly awarded for achieving the <b>highest sales in the state of Rajasthan for the second consecutive time</b>. This remarkable achievement reflects the dedication of our team and the strong trust of the community in affordable generic medicines.</p>
+        <p class="col-md-12 fs-4">This success has been achieved under the <b>guidance and direction of Executive Director Shri Goverdhan Dutt Puri</b>, whose leadership and vision have played a key role in expanding access to quality medicines at affordable prices.</p>
+        <p class="col-md-12 fs-4">This recognition motivates us to continue serving the public with commitment and to support the mission of providing quality medicines at affordable prices for all.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-custom rounded-3">
+        <h1 class="display-5 fw-bold">Executive Director's Vision</h1>
+        <p class="fs-4" style="text-align: justify;">AIIMS Jodhpur is a center of clinical excellence serving the people of Western India. My vision as its Executive Director is to expand its footprint of achievement to span the latest advances in compassionate clinical care for patients and their families, cutting-edge research to improve outcomes, engaging educational environment for medical and nursing students, physicians, ancillary staff, and scientists, as well as a culture of collaboration and support as we all move forward together. Through outreach centers, we will aim to improve access to top-quality healthcare to everyone regardless of their location or economic status. Through reinvigorated training programs we will promote continuous learning through all stages of the career for all medical providers. Through enhancing the work with biotechnology, we will leverage the benefits of automation to reduce burnout and improve efficiency.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-custom rounded-3">
+        <h1 class="display-5 fw-bold">Calendar</h1>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullCalendar Event Info on Click</title>
+    
+    <link href="calendar/css/fullcalendar.min.css" rel="stylesheet">
+    <style>
+        /* Set the container size to 350px */
+        #calendar {
+            /*width: 350px;
+            height: 350px;
+            margin: 0 auto;  Centers the calendar */
+        }
+        .box {
+        float: left;
+        height: 15px;
+        width: 15px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        clear: both;
+        }
+
+        .red {
+        background-color: red;
+        }
+
+        .green {
+        background-color: green;
+        }
+
+        .blue {
+        background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div id="calendar"></div>
+</div>
+
+<!-- Modal for displaying event details -->
+<div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="eventModalLabel">Event Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Title:</strong> <span id="eventTitle"></span></p>
+                <p><strong>Date:</strong> <span id="eventStart"></span></p>
+                <!--<p><strong>End:</strong> <span id="eventEnd"></span></p>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="calendar/js/jquery.min.js"></script>
+<script src="calendar/js/moment.min.js"></script>
+<script src="calendar/js/fullcalendar.min.js"></script>
+<script src="calendar/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            events: [
+                {
+                    title: 'Republic Day',
+                    start: '2025-01-26',
+                    end: '2025-01-26',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Maha Shivratri',
+                    start: '2025-02-26',
+                    end: '2025-02-26',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Holi',
+                    start: '2025-03-14',
+                    end: '2025-03-14',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Eid-Ul-Fitr',
+                    start: '2025-03-31',
+                    end: '2025-03-31',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Mahavir Jayanti',
+                    start: '2025-04-10',
+                    end: '2025-04-10',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Good Friday',
+                    start: '2025-04-18',
+                    end: '2025-04-18',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Buddha Purnima',
+                    start: '2025-05-12',
+                    end: '2025-05-12',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Eid-Ul-Zuha (Bakrid)',
+                    start: '2025-06-07',
+                    end: '2025-06-07',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Muharram',
+                    start: '2025-07-06',
+                    end: '2025-07-06',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Independence Day',
+                    start: '2025-08-15',
+                    end: '2025-08-15',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Janmashtami',
+                    start: '2025-08-16',
+                    end: '2025-08-16',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Baba Ramdev Jayanti',
+                    start: '2025-08-25',
+                    end: '2025-08-25',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Eid-E-Milad',
+                    start: '2025-09-05',
+                    end: '2025-09-05',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Mahatama Gandhi',
+                    start: '2025-10-02',
+                    end: '2025-10-02',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Diwali',
+                    start: '2025-10-20',
+                    end: '2025-10-20',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Guru Nanak',
+                    start: '2025-11-05',
+                    end: '2025-11-05',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Christmas Day',
+                    start: '2025-12-25',
+                    end: '2025-12-25',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'New Year',
+                    start: '2025-01-01',
+                    end: '2025-01-01',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Gurur Gobind Singh',
+                    start: '2025-01-06',
+                    end: '2025-01-06',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Makar Sankranti, Magha Bihu, Pongal, Birthday - Hazarat Ali',
+                    start: '2025-01-14',
+                    end: '2025-01-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Sri Panchami, Basant Panchami',
+                    start: '2025-02-02',
+                    end: '2025-02-02',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Guru Ravi Das',
+                    start: '2025-02-12',
+                    end: '2025-02-12',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Shivaji Jayanti',
+                    start: '2025-02-19',
+                    end: '2025-02-19',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday of Swami Dayananda Saraswati',
+                    start: '2025-02-23',
+                    end: '2025-02-23',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Holika Dahan',
+                    start: '2025-03-13',
+                    end: '2025-03-13',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dolyatra',
+                    start: '2025-03-14',
+                    end: '2025-03-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Jamat-Ul-Vida',
+                    start: '2025-03-28',
+                    end: '2025-03-28',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Chaitra Sukladi, Gudi Padava, Ugadi, Cheti Chand',
+                    start: '2025-03-30',
+                    end: '2025-03-30',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Ram Navami',
+                    start: '2025-04-06',
+                    end: '2025-04-06',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Vaisakhi, Vishu',
+                    start: '2025-04-13',
+                    end: '2025-04-13',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Meshadi (Tamil New Year)',
+                    start: '2025-04-14',
+                    end: '2025-04-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Vaisakhadi (Bengal), Bahag Bihu (Assam)',
+                    start: '2025-04-15',
+                    end: '2025-04-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Easter Sunday',
+                    start: '2025-04-20',
+                    end: '2025-04-20',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Guru Rabindranath Tagore',
+                    start: '2025-05-09',
+                    end: '2025-05-09',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Rath Yatra',
+                    start: '2025-06-27',
+                    end: '2025-06-27',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Raksha Bandhan',
+                    start: '2025-08-09',
+                    end: '2025-08-09',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Parsi New Year, Nauroz, Janmashtami (Smarta)',
+                    start: '2025-08-15',
+                    end: '2025-08-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Vinayaka Chaturthi, Ganesh Chaturthi',
+                    start: '2025-08-27',
+                    end: '2025-08-27',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Onam or Thiru Onam Day',
+                    start: '2025-09-05',
+                    end: '2025-09-05',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Saptami)',
+                    start: '2025-09-29',
+                    end: '2025-09-29',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Mahashtami)',
+                    start: '2025-09-30',
+                    end: '2025-09-30',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Mahanavami)',
+                    start: '2025-10-01',
+                    end: '2025-10-01',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday - Maharishi Valmiki',
+                    start: '2025-10-07',
+                    end: '2025-10-07',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Karaka Chaturthi (Karva Chouth)',
+                    start: '2025-10-10',
+                    end: '2025-10-10',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Naraka Chaturdasi',
+                    start: '2025-10-20',
+                    end: '2025-10-20',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Govanahardhan Puja',
+                    start: '2025-10-22',
+                    end: '2025-10-22',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Bhai Duj',
+                    start: '2025-10-23',
+                    end: '2025-10-23',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Pratihar Sashthi, Surya Sashthi (Chhat Puja)',
+                    start: '2025-10-28',
+                    end: '2025-10-28',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Guru Teg Bahadur Martyrdom Day',
+                    start: '2025-11-24',
+                    end: '2025-11-24',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Christmas Eve',
+                    start: '2025-12-24',
+                    end: '2025-12-24',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Republic day',
+                    start: '2026-01-26',
+                    end: '2026-01-26',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Holi',
+                    start: '2026-03-04',
+                    end: '2026-03-04',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Sheetala Ashtami',
+                    start: '2026-03-11',
+                    end: '2026-03-11',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Id-ul-Fitr',
+                    start: '2026-03-21',
+                    end: '2026-03-21',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Mahavir Jayanti',
+                    start: '2026-03-31',
+                    end: '2026-03-31',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Good Friday',
+                    start: '2026-04-03',
+                    end: '2026-04-03',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday of Dr. B.R. Ambedkar',
+                    start: '2026-04-14',
+                    end: '2026-04-14',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Buddha Purnima',
+                    start: '2026-05-01',
+                    end: '2026-05-01',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Id-ul-Zuha (Bakrid)',
+                    start: '2026-05-27',
+                    end: '2026-05-27',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Muharram',
+                    start: '2026-06-26',
+                    end: '2026-06-26',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Guru Purnima',
+                    start: '2026-07-29',
+                    end: '2026-07-29',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Independence Day',
+                    start: '2026-08-15',
+                    end: '2026-08-15',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Milad-Un-Nabi or Id-E Milad (Birthday of Prophet Mohammed)',
+                    start: '2026-08-26',
+                    end: '2026-08-26',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Janmashtami',
+                    start: '2026-09-04',
+                    end: '2026-09-04',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Ganesh Chaturthi',
+                    start: '2026-09-14',
+                    end: '2026-09-14',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Mahatma Gandhi Birthday',
+                    start: '2026-10-02',
+                    end: '2026-10-02',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Vijay Dashmi)',
+                    start: '2026-10-20',
+                    end: '2026-10-20',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Diwali (Deepavali)',
+                    start: '2026-11-08',
+                    end: '2026-11-08',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Guru Nanak Birthday',
+                    start: '2026-11-24',
+                    end: '2026-11-24',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'Christmas',
+                    start: '2026-12-25',
+                    end: '2026-12-25',
+                    backgroundColor: 'red'  // Custom background color for an event
+                },
+                {
+                    title: 'New Year Day',
+                    start: '2026-01-01',
+                    end: '2026-01-01',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Hazarat Ali Birthday',
+                    start: '2026-01-03',
+                    end: '2026-01-03',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Makar Sankranti, Magha Bihu, Pongal',
+                    start: '2026-01-14',
+                    end: '2026-01-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Sri Panchami, Basant Panchami',
+                    start: '2026-01-23',
+                    end: '2026-01-23',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Guru Ravi Das Birthday',
+                    start: '2026-02-01',
+                    end: '2026-02-01',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday of Swami Dayananda Saraswati',
+                    start: '2026-02-12',
+                    end: '2026-02-12',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Maha Shivratri',
+                    start: '2026-02-15',
+                    end: '2026-02-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Shiva ji Jayanti',
+                    start: '2026-02-19',
+                    end: '2026-02-19',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Holika Dahan, Dolyatra',
+                    start: '2026-03-03',
+                    end: '2026-03-03',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Chaitra Sukladi, Gudi Padava, Ugadi, Cheti Chand',
+                    start: '2026-03-19',
+                    end: '2026-03-19',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Jamat-Ul-Vida',
+                    start: '2026-03-20',
+                    end: '2026-03-20',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Easter Sunday',
+                    start: '2026-04-05',
+                    end: '2026-04-05',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Vaisakhi, Nisu, Meshadi (Tamil New Years Day)',
+                    start: '2026-04-14',
+                    end: '2026-04-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Vaisakhadi (Bengal), Bahag Bihu (Assam)',
+                    start: '2026-04-15',
+                    end: '2026-04-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Birthday of Guru Rabindranath Tagore',
+                    start: '2026-05-09',
+                    end: '2026-05-09',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Rath Yatra',
+                    start: '2026-07-16',
+                    end: '2026-07-16',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Parsi New Years day, Nauraj',
+                    start: '2026-08-15',
+                    end: '2026-08-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Onam or Thiru Onam Day',
+                    start: '2026-08-26',
+                    end: '2026-08-26',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Raksha Bandhan',
+                    start: '2026-08-28',
+                    end: '2026-08-28',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Ganesh Chaturthi (Vinayak Chaturthi)',
+                    start: '2026-09-14',
+                    end: '2026-09-14',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dusshera (Saptami)',
+                    start: '2026-10-18',
+                    end: '2026-10-18',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Mahashtami)',
+                    start: '2026-10-19',
+                    end: '2026-10-19',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Dussehra (Mahanavmi)',
+                    start: '2026-10-20',
+                    end: '2026-10-20',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Maharishi Valmikis Birthday',
+                    start: '2026-10-26',
+                    end: '2026-10-26',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Karaka Chaturthi (Karwa Chouth)',
+                    start: '2026-10-29',
+                    end: '2026-10-29',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Naraka Chaturdasi',
+                    start: '2026-11-08',
+                    end: '2026-11-08',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Govardhan Puja',
+                    start: '2026-11-09',
+                    end: '2026-11-09',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Bhai Duj',
+                    start: '2026-11-11',
+                    end: '2026-11-11',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Pratihar Shashthi or Surya Shashthi (Chhat Puja)',
+                    start: '2026-11-15',
+                    end: '2026-11-15',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Guru Teg Bahadur Martyrdom Day',
+                    start: '2026-11-24',
+                    end: '2026-11-24',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Hazrat Ali Birthday',
+                    start: '2026-12-23',
+                    end: '2026-12-23',
+                    backgroundColor: 'green'  // Custom background color for an event
+                },
+                {
+                    title: 'Christmas Eve',
+                    start: '2026-12-24',
+                    end: '2026-12-24',
+                    backgroundColor: 'green'  // Custom background color for an event
+                }
+            ],
+            height: 350,
+            contentHeight: 'auto',
+            aspectRatio: 1.5,
+            eventClick: function(calEvent, jsEvent, view) {
+                // Open the modal and display event info
+                $('#eventTitle').text(calEvent.title);
+                $('#eventStart').text(moment(calEvent.start).format('YYYY-MM-DD HH:mm'));
+                //$('#eventEnd').text(moment(calEvent.end).format('YYYY-MM-DD HH:mm'));
+
+                // Show the modal
+                $('#eventModal').modal('show');
+            },
+            eventRender: function(event, element) {
+                // Apply custom background color to the event element
+                element.css('background-color', event.backgroundColor);
+            }
+        });
+    });
+</script>
+
+<div>
+    <div class='box red'></div> - Gazzeted Holiday <br />
+</div>
+<div>
+    <div class='box green'></div> - Restricted Holiday
+</div>
+
+</body>
+</html>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-3">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2 style="text-align: center;">Latest Information</h2>
+            <marquee onmouseout="startMarquee()" onmouseover="stopMarquee()" direction="up" scrolldelay="200" height="400px;">
+              <strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/" target="_blank" style="text-decoration: none; color:#fff;">5th Convocation of All India Institute of Medical Sciences, Jodhpur will be held on 6th May 2026</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Admn/Rect./Contract/2026/02 RECRUITMENT FOR VARIOUS POSTS IN AIIMS JODHPUR ON CONTRACT BASIS</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Document Verification - Notice No.355/2025 COMMON RECRUITMENT EXAMINATION- 4 (CRE-4) For AIIMS and Other Central Govt Institutes/bodies</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/fac-c-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Admn/Rect./Contract/2026/706 Engagement of human resource on contractual basis for operationalization and maintenance of BHISHM Cubes under PM-ABHIM at AIIMS Jodhpur.</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/residents-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - DEAN (ACADEMICS)/JR/58/2026-AIIMS.JDH Recruitment to the post of Non–Academic Junior Resident (Dental) at AIIMS Jodhpur (Rajasthan).</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/residents-rec-walkin.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Academics/SR/59/2026-AIIMS.JDH WALK-IN-INTERVIEW FOR THE RECRUITMENT OF SENIOR RESIDENT AT AIIMS, JODHPUR (RAJASTHAN).</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Notification - Notice No. 278/2025 COMMON RECRUITMENT EXAMINATION- 2025 For AIIMS and Other Central Govt Institutes/bodies</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/pg-course.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Dean (Academics)/PG Dip./57/2025 -AIIMS.JDH POST GRADUATE DIPLOMA IN GENETIC COUNSELLING AT AIIMS, JODHPUR</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">AIIMS.JDH/Admn/Rect./Contract/2026/01 Recruitment for various posts in AIIMS Jodhpur on contract basis</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Notice - AIIMS.JDH/Admn/Rect./DR/Group A/2024 Recruitment to the various Group-A posts (Non-Faculty) on DIRECT RECRUITMENT basis at AIIMS, Jodhpur</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Notifications - Notice No. 171/2025 COMMON RECRUITMENT EXAMINATION For AIIMS and Other Central Govt Institutes/bodies</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/fac-d-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Cancellation Notice - Admn/Faculty/ 07/2025-AIIMS.JDH ADVERTISEMENT FOR RECRUITMENT OF FACULTY POSTS(GROUP ‘A’) IN VARIOUS DEPARTMENTS OF AIIMS JODHPUR ON DIRECT RECRUITMENT BASIS.</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/fac-dep-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Cancellation Notice - Admn/Faculty/06/2025-AIIMS.JDH ADVERTISEMNT FOR RECRUITMENT OF FACULTY POSTS (GROUP ‘A’) IN VARIOUS DEPARTMENTS OF AIIMS JODHPUR ON PURELY DEPUTATION BASIS</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/fac-c-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Admn/Faculty/02/2026-AIIMS.JDH RECRUITMENT OF FACULTY POSTS IN VARIOUS DEPARTMENTS OF AIIMS JODHPUR ON CONTRACT BASIS.</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/sph.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Admn/SPH/EXE/JAN/2026-AIIMS.JDH Executive Program in Public Health Policy, Leadership and Management, January 2026 session</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/phd-course.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Dean (Acad)/Ph.D/Jan/2026-AIIMS.JDH Ph.D. Programme Jan-2026 Session</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/residents-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Dean (Academics)/SR/55/2025-AIIMS.JDH Recruitment to the post of Senior Residents (Non DM/MCh.) as per Govt. of India’s Residency Scheme at AIIMS, Jodhpur (Rajasthan) INDIA</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/fellowship-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Dean (Academics)/PDF/56/2025-AIIMS.JDH POST-DOCTORAL FELLOWSHIP AT AIIMS, JODHPUR (RAJASTHAN) (Session- January 2026)</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/sph.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Academic/MPH/2026-AIIMS.JDH MPH Course Jan 2026 session at School of Public Health (SPH)-AIIMS Jodhpur</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://aiimsjodhpur.edu.in/deputation-rec.php" target="_blank" style="text-decoration: none; color:#fff;">AIIMS.JDH/Admn/RECT/Deputation/01/2026/681 Deputation advertisement for the post of medical superintendent</a></strong><br/><br/><strong><a data-toggle="tooltip" title="Click to open" href="https://www.aiimsjodhpur.edu.in/non-fac-rec.php" target="_blank" style="text-decoration: none; color:#fff;">Result - Admn/Rect./Contract/2025/01 RECRUITMENT FOR VARIOUS POSTS IN AIIMS JODHPUR ON CONTRACT BASIS</a></strong><br/><br/>            </marquee>
+
+            <script>
+              function stopMarquee() {
+                  document.querySelector('marquee').stop();
+              }
+              
+              function startMarquee() {
+                  document.querySelector('marquee').start();
+              }
+            </script>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2 style="text-align: center;">Important</h2>
+          <p>This is to bring to your notice regarding availability of Crowd Funding Portal for Rare Disease at <a data-toggle="tooltip" title="Click to open" href="https://rarediseases.mohfw.gov.in" target="_blank" style="text-decoration: none; color:#FFFFFF;">https://rarediseases.mohfw.gov.in</a> 'AIIMS Jodhpur' is Centre of Excellence for Rare Diseases.</p>
+          
+          <p>Helpline Number for corona-virus : +91-11-23978046 Toll Free No: 1075</p>
+          
+          <p>Helpline Email ID for corona-virus : ncov2019[at]gov[dot]in</p>
+          
+          <p>For more visit please visit official website of <a data-toggle="tooltip" title="Click to open" href="https://www.mohfw.gov.in/" target="_blank" style="text-decoration: none; color:#FFFFFF;">MOHFW</a></p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2 style="text-align: center;"><span style="color: #FF0000;">Youtube</span> Feeds</h2>
+          <iframe
+            width="100%"
+            height="350"
+            src="https://www.youtube.com/embed?listType=user_uploads&list=aiimsjodhpur"
+            title="YouTube Channel Feed"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <h2 style="text-align: center;"><span style="color: #1877F2;">Facebook</span> Feeds</h2>
+          <div id="feed-container">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAIIMS.JDH342005%2F&tabs=timeline&width=400&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START THE FEATURETTES -->
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+<!-- FOOTER -->
+  <hr class="featurette-divider">
+  
+  <div class="container.fluid mt-auto px-5 custom-footer" style="margin-bottom: 0; padding-bottom: 0;">
+    <footer class="py-5" style="padding-bottom: 0;">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Other Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://mohfw.gov.in/" class="nav-link p-0 text-light" target="_blank">Ministry of Health and Family Welfare</a></li>
+            <li class="nav-item mb-2"><a href="https://pmssy.mohfw.gov.in/" class="nav-link p-0 text-light" target="_blank">Pradhan Mantri Swasthya Suraksha Yojana (PMSSY)</a></li>
+            <li class="nav-item mb-2"><a href="alldocs/miscdocs/AIIMS List - 2024.pdf" class="nav-link p-0 text-light" target="_blank">List of AIIMS</a></li>
+            <li class="nav-item mb-2"><a href="https://nams-india.in/" class="nav-link p-0 text-light" target="_blank">National Academy of Medical Sciences</a></li>
+            <li class="nav-item mb-2"><a href="https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/home.jsp" class="nav-link p-0 text-light" target="_blank">Postgraduate Institute of Medical Education and Research, Chandigarh</a></li>            
+            <li class="nav-item mb-2"><a href="https://aiimsjodhpur.org/tribal/" class="nav-link p-0 text-light" target="_blank">Centre of Excellence for Tribal Health</a></li>
+            <li class="nav-item mb-2"><a href="https://sphaiimsjdh.org/" class="nav-link p-0 text-light" target="_blank">School of Public Health</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Important Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="annual-report.php" class="nav-link p-0 text-light">Annual Reports</a></li>
+            <li class="nav-item mb-2"><a href="newsletter.php" class="nav-link p-0 text-light">News Letter "ROHIDA"</a></li>
+            <li class="nav-item mb-2"><a href="public_lecture.php" class="nav-link p-0 text-light">Public Lecture</a></li>
+            <li class="nav-item mb-2"><a href="covid19.php" class="nav-link p-0 text-light">COVID 19 (Important Videos)</a></li>
+            <li class="nav-item mb-2"><a href="alldocs/miscdocs/COVID Appropriate Behavior Activities_Report_V3.pdf" class="nav-link p-0 text-light" target="_blank">COVID Appropriate Behavior</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="quickdoc.php" class="nav-link p-0 text-light">Quick Docs</a></li>
+            <li class="nav-item mb-2"><a href="bmw.php" class="nav-link p-0 text-light">Biomedical Waste Management Reports</a></li>
+            <li class="nav-item mb-2"><a href="https://aiimsj-opac.kohacloud.in/" class="nav-link p-0 text-light" target="_blank">Central Library</a></li>
+            <li class="nav-item mb-2"><a href="ashaa_donation.php" class="nav-link p-0 text-light">ASHAA Scheme for Donation</a></li>            
+            <li class="nav-item mb-2"><a href="ip-cell.php" class="nav-link p-0 text-light">Intellectual Property</a></li>
+            <li class="nav-item mb-2"><a href="social-outreach.php" class="nav-link p-0 text-light">Social Outreach</a></li>
+            <li class="nav-item mb-2"><a href="alldocs/miscdocs/Conflict of Interest Declaration.pdf" class="nav-link p-0 text-light" target="_blank">Conflict of Interest Declaration</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <h5>Reach Us</h5>
+          <p class="text-light">All India Institute of Medical Sciences, Jodhpur<br />
+          Basni Industrial Area Phase 2, Jodhpur - 342005 (Rajasthan)<br />
+          Medical College:- 0291-2740741
+          </p>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4916.878972053538!2d73.00484812262421!3d26.24103909913019!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418c082dc64515%3A0xaa9da8d09f2b5fc!2sAll%20India%20Institute%20of%20Medical%20Sciences%2C%20Jodhpur!5e0!3m2!1sen!2sin!4v1737784024021!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="embed-responsive-item"></iframe>
+
+          <!-- Social Media Links -->
+          <div class="social-media-links mt-3 mb-3">
+            <h6>Connect With Us</h6>
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/AIIMS.JDH342005" target="_blank" class="text-light"><i class="bi bi-facebook"></i> Facebook</a>
+              <a href="https://x.com/aiims_jodhpur" target="_blank" class="text-light"><i class="bi bi-twitter"></i> Twitter</a>
+              <a href="https://www.youtube.com/@aiimsjodhpur" target="_blank" class="text-light"><i class="bi bi-youtube"></i> YouTube</a>
+            </div>
+          </div>
+
+          <div class="visitor-counter mt-3">
+            <h6>Total Visitors</h6>
+                        <div class="counter-display">
+              <span class="badge bg-primary">459</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2025 All India Institute of Medical Sciences, Jodhpur, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <link rel="stylesheet" href="assets/dist/css/icons/bootstrap-icons.min.css">
+
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+</main>
+      
+</body>
+</html>
