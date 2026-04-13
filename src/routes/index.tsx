@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import TopUtilityBar from "@/components/TopUtilityBar";
 import SiteHeader from "@/components/SiteHeader";
 import HeroSection from "@/components/HeroSection";
+import LeadershipSection from "@/components/LeadershipSection";
 import QuickServices from "@/components/QuickServices";
 import AboutSection from "@/components/AboutSection";
 import DepartmentsSection from "@/components/DepartmentsSection";
@@ -31,6 +32,7 @@ function HomePage() {
       <TopUtilityBar />
       <SiteHeader />
       <HeroSection />
+      <LeadershipSection />
       <QuickServices />
       <AboutSection />
       <DepartmentsSection />
