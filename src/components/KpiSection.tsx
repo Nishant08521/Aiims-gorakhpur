@@ -89,7 +89,7 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
   return (
     <div
       ref={ref}
-      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-6 transition-all duration-500 hover:bg-white/10 hover:border-white/20 hover:scale-[1.02] hover:shadow-2xl"
+      className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-md transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl"
       style={{ animationDelay: `${index * 150}ms` }}
     >
       {/* Gradient accent line */}
@@ -100,8 +100,8 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
           <Icon size={26} strokeWidth={1.5} className={kpi.iconColor} />
         </div>
         <div className="min-w-0">
-          <p className="text-lg font-semibold text-white leading-tight">{kpi.label}</p>
-          <p className="text-xs font-medium text-white/70 uppercase tracking-wider">{kpi.period}</p>
+          <p className="text-lg font-semibold text-foreground leading-tight">{kpi.label}</p>
+          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{kpi.period}</p>
         </div>
       </div>
 
@@ -109,7 +109,7 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
         <span className={`text-4xl font-extrabold bg-gradient-to-r ${kpi.gradient} bg-clip-text text-transparent`}>
           {formatNumber(count)}
         </span>
-        {kpi.suffix && <span className="text-white/40 text-sm">{kpi.suffix}</span>}
+        {kpi.suffix && <span className="text-muted-foreground text-sm">{kpi.suffix}</span>}
       </div>
 
       {/* Subtle glow effect */}
@@ -120,19 +120,11 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
 
 export default function KpiSection() {
   return (
-    <section className="relative bg-[hsl(var(--primary))] py-16 overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }} />
-      </div>
-
+    <section className="relative bg-secondary/30 py-16 overflow-hidden">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">Performance Metrics</p>
-          <h2 className="mt-2 text-3xl font-bold text-white">Hospital at a Glance</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">Performance Metrics</p>
+          <h2 className="mt-2 text-3xl font-bold text-primary">Hospital at a Glance</h2>
         </div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {KPIS.map((kpi, i) => (
