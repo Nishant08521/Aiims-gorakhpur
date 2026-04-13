@@ -1,4 +1,4 @@
-import { Users, Building2, BedDouble, FlaskConical, type LucideIcon } from "lucide-react";
+import { Users, Building2, BedDouble, FlaskConical } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const KPIS = [
@@ -45,7 +45,7 @@ const KPIS = [
 ];
 
 function formatNumber(n: number): string {
-  return n.toLocaleString("en-IN");
+  return n.toLocaleString("en-IN", { useGrouping: true });
 }
 
 function useCountUp(target: number, duration = 2000, trigger = false) {
