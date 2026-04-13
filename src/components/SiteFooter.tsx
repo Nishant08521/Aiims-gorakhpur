@@ -9,15 +9,16 @@ const LINKS = [
 ];
 
 const OTHER_AIIMS = [
-  { name: "AIIMS Rishikesh", abbr: "Rishikesh", color: "bg-rose-100 text-rose-700" },
-  { name: "AIIMS Bhopal", abbr: "Bhopal", color: "bg-blue-100 text-blue-700" },
-  { name: "AIIMS Gorakhpur", abbr: "Gorakhpur", color: "bg-amber-100 text-amber-700" },
-  { name: "AIIMS Bhatinda", abbr: "Bhatinda", color: "bg-yellow-100 text-yellow-700" },
-  { name: "AIIMS Jodhpur", abbr: "Jodhpur", color: "bg-orange-100 text-orange-700" },
-  { name: "AIIMS Patna", abbr: "Patna", color: "bg-emerald-100 text-emerald-700" },
-  { name: "AIIMS Raipur", abbr: "Raipur", color: "bg-sky-100 text-sky-700" },
-  { name: "AIIMS Nagpur", abbr: "Nagpur", color: "bg-purple-100 text-purple-700" },
-  { name: "AIIMS Kalyani", abbr: "Kalyani", color: "bg-pink-100 text-pink-700" },
+  { name: "AIIMS Rishikesh", logo: "/images/aiims-logos/rishikesh.png", href: "https://aiimsrishikesh.edu.in" },
+  { name: "AIIMS Bhopal", logo: "/images/aiims-logos/bhopal.png", href: "https://aiimsbhopal.edu.in" },
+  { name: "AIIMS Gorakhpur", logo: "/images/aiims-logos/gorakhpur.png", href: "https://aiimsgorakhpur.edu.in" },
+  { name: "AIIMS Bhatinda", logo: "/images/aiims-logos/bhatinda.png", href: "https://aiimsbathinda.edu.in" },
+  { name: "AIIMS Jodhpur", logo: "/images/aiims-logos/jodhpur.png", href: "https://aiimsjodhpur.edu.in" },
+  { name: "AIIMS Patna", logo: "/images/aiims-logos/patna.png", href: "https://aiimspatna.edu.in" },
+  { name: "AIIMS Raipur", logo: "/images/aiims-logos/raipur.png", href: "https://aiimsraipur.edu.in" },
+  { name: "AIIMS Nagpur", logo: "/images/aiims-logos/nagpur.png", href: "https://aiimsnagpur.edu.in" },
+  { name: "AIIMS Kalyani", logo: "/images/aiims-logos/kalyani.png", href: "https://aiimskalyani.edu.in" },
+  { name: "AIIMS New Delhi", logo: "/images/aiims-logos/new-delhi.png", href: "https://aiims.edu" },
 ];
 
 function OtherAIIMSSection() {
