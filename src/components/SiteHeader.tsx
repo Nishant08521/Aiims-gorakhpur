@@ -199,8 +199,8 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card shadow-sm">
+      {/* Top row: Logo + CTA */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-heading text-lg font-bold text-primary-foreground">
             A
@@ -211,14 +211,6 @@ export default function SiteHeader() {
           </div>
         </div>
 
-        {/* Desktop Nav */}
-        <nav className="hidden items-center gap-0.5 lg:flex">
-          {NAV_ITEMS.map((item) => (
-            <DesktopDropdown key={item.label} item={item} />
-          ))}
-        </nav>
-
-        {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-2">
           <a href="#emergency" className="hidden rounded-md bg-emergency px-3 py-2 text-xs font-semibold text-emergency-foreground transition-transform hover:scale-105 sm:inline-block">
             🔴 Emergency
@@ -231,6 +223,15 @@ export default function SiteHeader() {
           </button>
         </div>
       </div>
+
+      {/* Desktop Nav — below logo */}
+      <nav className="hidden border-t border-border bg-card lg:block">
+        <div className="mx-auto flex max-w-7xl items-center gap-0.5 px-4 py-1.5">
+          {NAV_ITEMS.map((item) => (
+            <DesktopDropdown key={item.label} item={item} />
+          ))}
+        </div>
+      </nav>
 
       {/* Mobile Nav */}
       {mobileOpen && (
