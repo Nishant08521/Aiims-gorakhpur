@@ -24,14 +24,14 @@ export default function TopUtilityBar() {
   return (
     <div className="bg-utility-bg text-utility-foreground">
       {/* Quick Links Bar */}
-      <div className="bg-amber-600">
+      <div className="bg-quick-links-bg">
         <div className="mx-auto max-w-7xl px-4 py-3">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {QUICK_LINKS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
                 href={href}
-                className="group flex items-center justify-center gap-2 rounded-lg bg-neutral-700 px-4 py-2.5 text-center text-sm font-medium text-white shadow-md transition-all hover:bg-neutral-600 hover:shadow-lg active:scale-95"
+                className="group flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-medium text-primary-foreground shadow-md transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95"
               >
                 <Icon size={16} className="opacity-80 group-hover:opacity-100" />
                 <span>{label}</span>
@@ -42,7 +42,7 @@ export default function TopUtilityBar() {
       </div>
       
       {/* Utility Controls Bar */}
-      <div className="border-t border-amber-700/30 text-xs">
+      <div className="border-t border-primary/30 text-xs">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-1.5">
           <div className="flex items-center gap-4">
             <a href="tel:+915512500100" className="flex items-center gap-1 hover:underline">
