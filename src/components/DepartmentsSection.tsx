@@ -1,12 +1,12 @@
 import { Heart, Brain, Bone, Stethoscope, Baby, Scissors } from "lucide-react";
 
 const DEPARTMENTS = [
-  { icon: Heart, name: "Cardiology" },
-  { icon: Brain, name: "Neurology" },
-  { icon: Bone, name: "Orthopaedics" },
-  { icon: Stethoscope, name: "General Medicine" },
-  { icon: Baby, name: "Pediatrics" },
-  { icon: Scissors, name: "General Surgery" },
+  { icon: Heart, name: "Cardiology", iconBg: "bg-red-100", iconColor: "text-red-500" },
+  { icon: Brain, name: "Neurology", iconBg: "bg-purple-100", iconColor: "text-purple-500" },
+  { icon: Bone, name: "Orthopaedics", iconBg: "bg-amber-100", iconColor: "text-amber-600" },
+  { icon: Stethoscope, name: "General Medicine", iconBg: "bg-blue-100", iconColor: "text-blue-500" },
+  { icon: Baby, name: "Pediatrics", iconBg: "bg-pink-100", iconColor: "text-pink-500" },
+  { icon: Scissors, name: "General Surgery", iconBg: "bg-teal-100", iconColor: "text-teal-500" },
 ];
 
 export default function DepartmentsSection() {
@@ -19,13 +19,13 @@ export default function DepartmentsSection() {
           <p className="mt-2 text-muted-foreground">30+ specialized departments providing comprehensive care</p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {DEPARTMENTS.map(({ icon: Icon, name }) => (
+          {DEPARTMENTS.map(({ icon: Icon, name, iconBg, iconColor }) => (
             <a
               key={name}
               href="#"
               className="group flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+              <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-lg ${iconBg} ${iconColor} transition-transform group-hover:scale-110`}>
                 <Icon size={28} />
               </div>
               <div>
