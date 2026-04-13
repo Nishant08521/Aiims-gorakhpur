@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
-  "Home", "About Institute", "Departments", "Patient Care",
-  "Academics", "Research", "Recruitment", "Tenders", "Contact Us",
+  "Home", "Administration", "Institution", "Academic & Research",
+  "Services", "Procurement", "Recruitment", "News & Event",
+  "Circular", "RTI", "ABHA",
 ];
 
 export default function SiteHeader() {
