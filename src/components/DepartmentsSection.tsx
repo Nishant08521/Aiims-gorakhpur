@@ -19,13 +19,13 @@ export default function DepartmentsSection() {
           <p className="mt-2 text-muted-foreground">30+ specialized departments providing comprehensive care</p>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {DEPARTMENTS.map(({ icon: Icon, name }) => (
+          {DEPARTMENTS.map(({ icon: Icon, name, iconBg, iconColor }) => (
             <a
               key={name}
               href="#"
               className="group flex items-center gap-4 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-lg bg-secondary text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+              <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-lg ${iconBg} ${iconColor} transition-transform group-hover:scale-110`}>
                 <Icon size={28} />
               </div>
               <div>
