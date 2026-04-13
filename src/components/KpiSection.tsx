@@ -100,8 +100,8 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
           <Icon size={26} strokeWidth={1.5} className={kpi.iconColor} />
         </div>
         <div className="min-w-0">
-          <p className="text-lg font-semibold text-white leading-tight">{kpi.label}</p>
-          <p className="text-xs font-medium text-white/70 uppercase tracking-wider">{kpi.period}</p>
+          <p className="text-lg font-semibold text-foreground leading-tight">{kpi.label}</p>
+          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{kpi.period}</p>
         </div>
       </div>
 
