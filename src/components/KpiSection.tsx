@@ -120,19 +120,11 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
 
 export default function KpiSection() {
   return (
-    <section className="relative bg-[hsl(var(--primary))] py-16 overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }} />
-      </div>
-
+    <section className="relative bg-secondary/30 py-16 overflow-hidden">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="mb-10 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">Performance Metrics</p>
-          <h2 className="mt-2 text-3xl font-bold text-white">Hospital at a Glance</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">Performance Metrics</p>
+          <h2 className="mt-2 text-3xl font-bold text-primary">Hospital at a Glance</h2>
         </div>
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {KPIS.map((kpi, i) => (
