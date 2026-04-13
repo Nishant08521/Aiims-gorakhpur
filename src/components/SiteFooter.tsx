@@ -62,16 +62,19 @@ function OtherAIIMSSection() {
             {OTHER_AIIMS.map((aiims) => (
               <a
                 key={aiims.name}
-                href="#"
+                href={aiims.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group flex shrink-0 flex-col items-center gap-2 transition-transform hover:scale-105"
               >
-                {/* Logo Placeholder */}
-                <div
-                  className={`flex h-16 w-16 items-center justify-center rounded-full border-2 border-border shadow-sm transition-shadow group-hover:shadow-md md:h-20 md:w-20 ${aiims.color}`}
-                >
-                  <span className="text-xs font-bold md:text-sm">{aiims.abbr.slice(0, 2)}</span>
-                </div>
-                {/* Name */}
+                <img
+                  src={aiims.logo}
+                  alt={`${aiims.name} logo`}
+                  loading="lazy"
+                  width={80}
+                  height={80}
+                  className="h-16 w-16 rounded-full border-2 border-border object-contain shadow-sm transition-shadow group-hover:shadow-md md:h-20 md:w-20"
+                />
                 <span className="text-center text-xs font-medium text-foreground/80 group-hover:text-foreground md:text-sm">
                   {aiims.name}
                 </span>
