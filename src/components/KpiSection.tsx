@@ -9,19 +9,19 @@ const KPIS = [
 
 export default function KpiSection() {
   return (
-    <section className="bg-primary py-10">
-      <div className="mx-auto grid max-w-7xl gap-4 px-4 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="bg-primary py-12">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 px-6 sm:grid-cols-2">
         {KPIS.map((kpi) => (
           <div
             key={kpi.label}
-            className="flex flex-col items-center rounded-xl bg-amber-500 px-6 py-8 text-center shadow-md"
+            className="flex flex-col items-center rounded-2xl border-2 border-amber-600/30 bg-amber-500 px-8 py-10 text-center"
           >
-            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-foreground bg-card">
-              <kpi.icon size={30} className="text-foreground" />
+            <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-foreground/70 bg-card">
+              <kpi.icon size={28} strokeWidth={1.5} className="text-foreground" />
             </div>
-            <p className="text-sm font-semibold text-foreground">{kpi.label}</p>
-            <p className="text-sm text-foreground/80">{kpi.period}</p>
-            <p className="mt-1 text-lg font-bold text-foreground">Total :- {kpi.total}</p>
+            <p className="text-base font-bold text-foreground">{kpi.label}</p>
+            <p className="text-sm text-foreground/70">{kpi.period}</p>
+            <p className="mt-2 text-xl font-extrabold text-foreground">Total :- {kpi.total}</p>
           </div>
         ))}
       </div>
