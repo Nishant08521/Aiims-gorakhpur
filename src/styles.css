@@ -51,6 +51,8 @@
   --color-emergency-foreground: var(--emergency-foreground);
   --color-utility-bg: var(--utility-bg);
   --color-utility-foreground: var(--utility-foreground);
+  --color-quick-links-bg: var(--quick-links-bg);
+  --color-quick-links-fg: var(--quick-links-fg);
   --color-section-alt: var(--section-alt);
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
@@ -85,6 +87,8 @@
   --emergency-foreground: oklch(0.99 0 0);
   --utility-bg: oklch(0.2 0.05 250);
   --utility-foreground: oklch(0.92 0.01 240);
+  --quick-links-bg: oklch(0.65 0.15 75);
+  --quick-links-fg: oklch(0.99 0 0);
   --section-alt: oklch(0.97 0.01 240);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
