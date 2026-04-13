@@ -2,14 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import TopUtilityBar from "@/components/TopUtilityBar";
 import SiteHeader from "@/components/SiteHeader";
 import HeroSection from "@/components/HeroSection";
-import LeadershipSection from "@/components/LeadershipSection";
 import QuickServices from "@/components/QuickServices";
 import KpiSection from "@/components/KpiSection";
 import OpdStatusSection from "@/components/OpdStatusSection";
+import WhatsNewQuickLinksSection from "@/components/WhatsNewQuickLinksSection";
 import AboutSection from "@/components/AboutSection";
 import DepartmentsSection from "@/components/DepartmentsSection";
 import DoctorsSection from "@/components/DoctorsSection";
-import NoticesSection from "@/components/NoticesSection";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import AcademicsSection from "@/components/AcademicsSection";
 import InfrastructureSection from "@/components/InfrastructureSection";
@@ -35,14 +34,13 @@ function HomePage() {
       <TopUtilityBar />
       <SiteHeader />
       <HeroSection />
-      <LeadershipSection />
       <QuickServices />
       <KpiSection />
       <OpdStatusSection />
+      <WhatsNewQuickLinksSection />
       <AboutSection />
       <DepartmentsSection />
       <DoctorsSection />
-      <NoticesSection />
       <FacilitiesSection />
       <AcademicsSection />
       <LatestEventsSection />
