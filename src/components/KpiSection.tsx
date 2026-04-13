@@ -50,7 +50,7 @@ function formatNumber(n: number): string {
 
 function useCountUp(target: number, duration = 2000, trigger = false) {
   const [value, setValue] = useState(0);
-  const rafRef = useRef<number>();
+  const rafRef = useRef<number>(0);
 
   useEffect(() => {
     if (!trigger) return;
