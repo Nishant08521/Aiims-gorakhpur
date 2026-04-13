@@ -1,12 +1,12 @@
 import { Heart, Brain, Bone, Stethoscope, Baby, Scissors } from "lucide-react";
 
 const DEPARTMENTS = [
-  { icon: Heart, name: "Cardiology" },
-  { icon: Brain, name: "Neurology" },
-  { icon: Bone, name: "Orthopaedics" },
-  { icon: Stethoscope, name: "General Medicine" },
-  { icon: Baby, name: "Pediatrics" },
-  { icon: Scissors, name: "General Surgery" },
+  { icon: Heart, name: "Cardiology", iconBg: "bg-red-100", iconColor: "text-red-500" },
+  { icon: Brain, name: "Neurology", iconBg: "bg-purple-100", iconColor: "text-purple-500" },
+  { icon: Bone, name: "Orthopaedics", iconBg: "bg-amber-100", iconColor: "text-amber-600" },
+  { icon: Stethoscope, name: "General Medicine", iconBg: "bg-blue-100", iconColor: "text-blue-500" },
+  { icon: Baby, name: "Pediatrics", iconBg: "bg-pink-100", iconColor: "text-pink-500" },
+  { icon: Scissors, name: "General Surgery", iconBg: "bg-teal-100", iconColor: "text-teal-500" },
 ];
 
 export default function DepartmentsSection() {
