@@ -95,13 +95,13 @@ function KpiCard({ kpi, index }: { kpi: typeof KPIS[0]; index: number }) {
       {/* Gradient accent line */}
       <div className={`absolute top-0 left-0 h-1 w-full bg-gradient-to-r ${kpi.gradient} opacity-80 group-hover:opacity-100 transition-opacity`} />
 
-      <div className="flex items-start gap-4">
+      <div className="flex items-center gap-3">
         <div className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl ${kpi.iconBg} transition-transform duration-300 group-hover:scale-110`}>
           <Icon size={26} strokeWidth={1.5} className={kpi.iconColor} />
         </div>
-        <div className="flex-1 min-w-0">
-          <p className="text-sm font-medium text-white/60 uppercase tracking-wider">{kpi.period}</p>
-          <p className="mt-1 text-lg font-semibold text-white/90 leading-tight">{kpi.label}</p>
+        <div className="min-w-0">
+          <p className="text-lg font-semibold text-white/90 leading-tight">{kpi.label}</p>
+          <p className="text-xs font-medium text-white/50 uppercase tracking-wider">{kpi.period}</p>
         </div>
       </div>
 
