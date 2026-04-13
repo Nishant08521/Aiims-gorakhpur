@@ -11,6 +11,7 @@ import NoticesSection from "@/components/NoticesSection";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import AcademicsSection from "@/components/AcademicsSection";
 import InfrastructureSection from "@/components/InfrastructureSection";
+import LatestEventsSection from "@/components/LatestEventsSection";
 import ContactSection from "@/components/ContactSection";
 import SiteFooter from "@/components/SiteFooter";
 
