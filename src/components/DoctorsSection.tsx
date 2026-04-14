@@ -9,7 +9,7 @@ const DOCTORS = [
 
 export default function DoctorsSection() {
   return (
-    <section id="find-doctor" className="mx-auto max-w-7xl px-4 py-16">
+    <section id="find-doctor" className="mx-auto max-w-7xl px-4 py-6">
       <div className="text-center">
         <span className="text-xs font-semibold uppercase tracking-widest text-healthcare-green">Our Team</span>
         <h2 className="mt-2 font-heading text-3xl font-bold text-primary">Doctors &amp; Faculty</h2>

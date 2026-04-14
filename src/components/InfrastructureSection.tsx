@@ -9,7 +9,7 @@ const ITEMS = [
 
 export default function InfrastructureSection() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16">
+    <section className="mx-auto max-w-7xl px-4 py-6">
       <div className="text-center">
         <span className="text-xs font-semibold uppercase tracking-widest text-healthcare-green">Campus</span>
         <h2 className="mt-2 font-heading text-3xl font-bold text-primary">Infrastructure Highlights</h2>
