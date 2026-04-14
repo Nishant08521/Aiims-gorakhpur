@@ -35,10 +35,12 @@ function HomePage() {
       <SiteHeader />
       <HeroSection />
       <QuickServices />
-      <KpiSection />
-      <OpdStatusSection />
+      
+   
       <WhatsNewQuickLinksSection />
+         <OpdStatusSection />
       <AboutSection />
+      <KpiSection />
       <DepartmentsSection />
       <DoctorsSection />
       <FacilitiesSection />

@@ -1,4 +1,4 @@
-import { Phone, Clock, Plus, Minus, Eye, User, Mail, Video, AtSign } from "lucide-react";
+import { Clock, Plus, Minus, Eye, User, Mail, Video, AtSign } from "lucide-react";
 import { useState } from "react";
 
 const QUICK_LINKS = [
@@ -22,54 +22,70 @@ export default function TopUtilityBar() {
   };
 
   return (
-    <div className="bg-utility-bg text-utility-foreground">
-      {/* Quick Links Bar */}
-      <div className="bg-quick-links-bg">
-        <div className="mx-auto max-w-7xl px-4 py-3">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <div className="bg-utility-bg text-utility-foreground text-xs">
+      {/* Utility Controls Bar — includes Quick Links + Accessibility Tools */}
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-1.5">
+
+        {/* LEFT: OPD Timing */}
+        <span className="hidden items-center gap-1 text-utility-foreground/60 sm:flex">
+          <Clock size={11} /> OPD: Mon–Fri 8AM–3PM | Sat 8AM–10AM
+        </span>
+
+        {/* RIGHT: Quick Links + Accessibility Controls */}
+        <div className="flex items-center gap-3">
+          {/* Quick Links */}
+          <div className="flex items-center divide-x divide-utility-foreground/20 pr-3 border-r border-utility-foreground/20">
             {QUICK_LINKS.map(({ icon: Icon, label, href }) => (
               <a
                 key={label}
                 href={href}
-                className="group flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-medium text-primary-foreground shadow-md transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95"
+                className="group flex items-center gap-1.5 px-3 py-0.5 text-utility-foreground/80 transition-colors duration-150 hover:text-utility-foreground first:pl-0"
               >
-                <Icon size={16} className="opacity-80 group-hover:opacity-100" />
-                <span>{label}</span>
+                <Icon size={11} className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" />
+                <span className="hidden sm:inline">{label}</span>
               </a>
             ))}
           </div>
-        </div>
-      </div>
-      
-      {/* Utility Controls Bar */}
-      <div className="border-t border-primary/30 text-xs">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 py-1.5">
-          <div className="flex items-center gap-4">
-            <a href="tel:+915512500100" className="flex items-center gap-1 hover:underline">
-              <Phone size={12} /> Helpline: 0551-2500100
-            </a>
-            <span className="hidden items-center gap-1 sm:flex">
-              <Clock size={12} /> OPD: Mon–Fri 8AM–3PM | Sat 8AM–10AM
-            </span>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="flex items-center gap-1">
-              <button onClick={() => handleFontSize(-1)} aria-label="Decrease font" className="rounded px-1 hover:bg-primary/30"><Minus size={12} /></button>
-              <span>A</span>
-              <button onClick={() => handleFontSize(1)} aria-label="Increase font" className="rounded px-1 hover:bg-primary/30"><Plus size={12} /></button>
-            </div>
-            <button onClick={toggleContrast} aria-label="Toggle contrast" className="flex items-center gap-1 rounded px-1.5 py-0.5 hover:bg-primary/30">
-              <Eye size={12} /> Contrast
-            </button>
+
+          {/* Font size */}
+          <div className="flex items-center gap-1">
             <button
-              onClick={() => setLang(lang === "en" ? "hi" : "en")}
-              className="rounded border border-utility-foreground/30 px-2 py-0.5 hover:bg-primary/30"
+              onClick={() => handleFontSize(-1)}
+              aria-label="Decrease font"
+              className="rounded px-1 hover:bg-primary/30"
             >
-              {lang === "en" ? "हिंदी" : "English"}
+              <Minus size={11} />
+            </button>
+            <span className="select-none">A</span>
+            <button
+              onClick={() => handleFontSize(1)}
+              aria-label="Increase font"
+              className="rounded px-1 hover:bg-primary/30"
+            >
+              <Plus size={11} />
             </button>
           </div>
+
+          {/* Contrast toggle */}
+          <button
+            onClick={toggleContrast}
+            aria-label="Toggle contrast"
+            className="flex items-center gap-1 rounded px-1.5 py-0.5 hover:bg-primary/30"
+          >
+            <Eye size={11} /> Contrast
+          </button>
+
+          {/* Language toggle */}
+          <button
+            onClick={() => setLang(lang === "en" ? "hi" : "en")}
+            className="rounded border border-utility-foreground/30 px-2 py-0.5 hover:bg-primary/30"
+          >
+            {lang === "en" ? "हिंदी" : "English"}
+          </button>
         </div>
+
       </div>
     </div>
   );
 }
+

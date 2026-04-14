@@ -42,31 +42,31 @@ const LEADERS = [
   {
     name: "Shri Jagat Prakash Nadda",
     designation: "Hon'ble Union Minister, Health & Family Welfare and Chemicals & Fertilizers, Government of India",
-    image: leader1,
+    image: "https://aiimsgorakhpur.edu.in/wp-content/uploads/2024/06/JP-nadda.jpg",
     bg: "bg-green-50",
   },
   {
     name: "Shri Prataprao Jadhav",
     designation: "Hon'ble Minister of State, Ministry of Health & Family Welfare, Government of India",
-    image: leader2,
+    image: "https://aiimsgorakhpur.edu.in/wp-content/uploads/2024/06/Shri-Prataprao-Jadhav.jpg",
     bg: "bg-orange-50",
   },
   {
     name: "Smt. Anupriya Patel",
     designation: "Hon'ble Minister of State, Ministry of Health & Family Welfare, Government of India",
-    image: leader3,
+    image: "https://aiimsgorakhpur.edu.in/wp-content/uploads/2024/06/Smt-Anupriya-Patel.jpg",
     bg: "bg-green-50",
   },
   {
     name: "Dr (Prof) Hemant Kumar",
     designation: "President, AIIMS Gorakhpur",
-    image: leader4,
+    image: "https://aiimsgorakhpur.edu.in/wp-content/uploads/2025/08/GiJx8Q3aUAAaQMi.jpg",
     bg: "bg-orange-50",
   },
   {
     name: "Maj Gen (Dr) Vibha Dutta",
     designation: "Executive Director & CEO, AIIMS Gorakhpur",
-    image: leader5,
+    image: "https://aiimsgorakhpur.edu.in/wp-content/uploads/2025/02/Ed-Maam.jpg",
     bg: "bg-blue-50",
   },
 ];

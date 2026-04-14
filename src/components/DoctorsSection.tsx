@@ -14,6 +14,7 @@ export default function DoctorsSection() {
         <span className="text-xs font-semibold uppercase tracking-widest text-healthcare-green">Our Team</span>
         <h2 className="mt-2 font-heading text-3xl font-bold text-primary">Doctors &amp; Faculty</h2>
       </div>
+
       <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {DOCTORS.map((doc) => (
           <div key={doc.name} className="group rounded-xl border border-border bg-card p-5 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md">
@@ -26,6 +27,17 @@ export default function DoctorsSection() {
             <a href="#" className="mt-3 inline-block text-xs font-semibold text-primary hover:underline">View Profile →</a>
           </div>
         ))}
+      </div>
+
+      {/* View All — bottom right */}
+      <div className="mt-8 flex justify-end">
+        <a
+          href="#all-doctors"
+          className="group inline-flex items-center gap-2 rounded-full border border-primary px-5 py-2 text-sm font-semibold text-primary transition-all hover:bg-primary hover:text-primary-foreground"
+        >
+          View All Doctors
+          <span className="transition-transform duration-200 group-hover:translate-x-1">→</span>
+        </a>
       </div>
     </section>
   );

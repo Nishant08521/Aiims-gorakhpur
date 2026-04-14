@@ -114,7 +114,7 @@ function DesktopDropdown({ item }: { item: NavItem }) {
     return (
       <a
         href={item.href}
-        className="rounded-md px-2.5 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary hover:text-primary"
+        className="rounded-md px-2.5 py-1.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
       >
         {item.label}
       </a>
@@ -124,7 +124,7 @@ function DesktopDropdown({ item }: { item: NavItem }) {
   return (
     <div ref={ref} className="relative" onMouseEnter={handleEnter} onMouseLeave={handleLeave}>
       <button
-        className="flex items-center gap-0.5 rounded-md px-2.5 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary hover:text-primary"
+        className="flex items-center gap-0.5 rounded-md px-2.5 py-1.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary hover:text-primary"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-haspopup="true"
@@ -202,13 +202,12 @@ export default function SiteHeader() {
       {/* Top row: Logo + CTA */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary font-heading text-lg font-bold text-primary-foreground">
-            A
-          </div>
-          <div>
-            <h1 className="text-base font-bold leading-tight text-primary sm:text-lg">AIIMS Gorakhpur</h1>
-            <p className="text-[10px] leading-tight text-muted-foreground">All India Institute of Medical Sciences</p>
-          </div>
+          <img
+            src="/images/aiimsp_logo.png"
+            alt="AIIMS Gorakhpur Logo"
+            className="h-auto w-full object-contain"
+          />
+         
         </div>
 
         <div className="flex items-center gap-2">
@@ -226,7 +225,7 @@ export default function SiteHeader() {
 
       {/* Desktop Nav — below logo */}
       <nav className="hidden border-t border-border bg-card lg:block">
-        <div className="mx-auto flex max-w-7xl items-center gap-0.5 px-4 py-1.5">
+        <div className="mx-auto flex max-w-7xl w-full items-center justify-between px-4 py-1.5">
           {NAV_ITEMS.map((item) => (
             <DesktopDropdown key={item.label} item={item} />
           ))}
